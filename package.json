@@ -1,0 +1,45 @@
+{
+  "name": "pi-workbuddy-provider",
+  "version": "0.1.0",
+  "description": "WorkBuddy / CodeBuddy provider for oh-my-pi: free-model discovery, browser sign-in without the desktop app, and multi-account failover.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Hadi Abbasi",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "oh-my-pi",
+    "omp",
+    "workbuddy",
+    "codebuddy",
+    "provider"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5ghzx/pi-workbuddy-provider.git"
+  },
+  "homepage": "https://github.com/5ghzx/pi-workbuddy-provider#readme",
+  "bugs": {
+    "url": "https://github.com/5ghzx/pi-workbuddy-provider/issues"
+  },
+  "files": [
+    "index.ts",
+    "ocfree.ts",
+    "oauth.ts",
+    "vault.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@oh-my-pi/pi-ai": "*",
+    "@oh-my-pi/pi-coding-agent": "*"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
